@@ -21,7 +21,6 @@ function enterFunderAccess() {
     document.getElementById('page-2').classList.remove('hidden');
     window.scrollTo(0, 0);
 
-    // Save lead preliminary
     saveLead({ nickname, email, phone, stage: 'funder_access', timestamp: new Date().toISOString() });
 }
 
