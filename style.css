@@ -81,6 +81,13 @@ body {
     font-weight: 600;
 }
 
+.section-subtitle {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
 /* DASHBOARD PREVIEW */
 .dashboard-preview {
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
@@ -164,6 +171,70 @@ body {
     font-size: 0.9rem; 
     line-height: 1.6;
     font-weight: 300;
+}
+
+/* SOVEREIGN SECURITY SECTION */
+.security-section {
+    margin: 70px 0;
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.security-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
+    padding: 35px 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.security-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.security-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.security-card h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.security-card p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.security-note {
+    margin-top: 35px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.security-note p {
+    color: #D4AF37;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 /* REGISTRATION */
@@ -275,7 +346,7 @@ textarea { min-height: 100px; resize: vertical; }
 }
 
 /* CONTENT SECTIONS */
-.education-section, .roadmap-section, .phases-section, .funder-role-section, .distinction-section, .fomo-section, .roi-section, .recurring-section, .closing-section {
+.education-section, .roadmap-section, .phases-section, .architect-section, .funder-role-section, .distinction-section, .fomo-section, .roi-section, .recurring-section, .closing-section {
     margin: 60px 0;
 }
 
@@ -406,7 +477,34 @@ textarea { min-height: 100px; resize: vertical; }
     font-style: italic;
 }
 
-/* PHASES GRID */
+/* PHASES SECTION */
+.phases-intro {
+    margin-bottom: 40px;
+}
+
+.intro-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 2px solid #D4AF37;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.intro-text {
+    color: #aaa;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.intro-text.highlight-text {
+    color: #D4AF37;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 25px 0;
+}
+
 .phases-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -420,10 +518,12 @@ textarea { min-height: 100px; resize: vertical; }
     padding: 35px;
     border-radius: 10px;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .phase-card:hover {
     border-color: #D4AF37;
+    transform: translateY(-5px);
 }
 
 .phase-card h3 {
@@ -442,28 +542,117 @@ textarea { min-height: 100px; resize: vertical; }
 .phase-detail {
     color: #999;
     font-size: 0.9rem;
-    margin: 10px 0;
+    margin: 12px 0;
     font-weight: 300;
 }
 
 .phase-purpose {
     color: #D4AF37;
     font-size: 0.9rem;
-    margin-top: 20px;
-    padding-top: 15px;
+    margin-top: 25px;
+    padding-top: 18px;
     border-top: 1px solid #333;
     font-weight: 400;
 }
 
-.phases-note {
+.phase-note {
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 15px;
+    font-weight: 400;
+    padding: 8px 15px;
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.phases-note-box {
     text-align: center;
-    color: #aaa;
-    font-size: 0.95rem;
-    margin-top: 30px;
-    font-style: italic;
-    padding: 20px;
+    margin-top: 40px;
+    padding: 25px;
     background: rgba(212, 175, 55, 0.04);
     border-left: 3px solid #D4AF37;
+    border-radius: 8px;
+}
+
+.phases-note {
+    color: #aaa;
+    font-size: 0.95rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.phases-note-secondary {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* ARCHITECT SECTION */
+.architect-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 2px solid #D4AF37;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.architect-lead {
+    color: #D4AF37;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 35px 0;
+}
+
+.journey-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.journey-card h4 {
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.journey-card p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.architect-conclusion {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.architect-signature {
+    color: #666;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 300;
 }
 
 /* ROLE LIST */
@@ -544,13 +733,6 @@ textarea { min-height: 100px; resize: vertical; }
 }
 
 /* ROI GRID */
-.section-subtitle { 
-    color: #888; 
-    text-align: center; 
-    margin-bottom: 35px;
-    font-weight: 300;
-}
-
 .roi-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -684,7 +866,6 @@ textarea { min-height: 100px; resize: vertical; }
     text-align: center;
 }
 
-.section-subtitle { color: #888; margin-bottom: 35px; }
 .lead-form { max-width: 700px; margin: 0 auto; }
 
 .submit-btn {
@@ -729,197 +910,11 @@ textarea { min-height: 100px; resize: vertical; }
     color: #555;
     font-weight: 300;
 }
-/* PHASES INTRO */
-.phases-intro {
-    margin-bottom: 40px;
-}
 
-.intro-box {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
-    border: 2px solid #D4AF37;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.intro-text {
-    color: #aaa;
-    font-size: 1.05rem;
-    line-height: 1.9;
-    margin: 15px 0;
-    font-weight: 300;
-}
-
-.intro-text.highlight-text {
-    color: #D4AF37;
-    font-weight: 500;
-    font-size: 1.15rem;
-    margin: 25px 0;
-}
-
-/* PHASE CARDS UPDATE */
-.phase-card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1.5px solid #333;
-    padding: 35px;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s;
-}
-
-.phase-card:hover {
-    border-color: #D4AF37;
-    transform: translateY(-5px);
-}
-
-.phase-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.phase-subtitle {
-    color: #FFD700;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.phase-detail {
-    color: #999;
-    font-size: 0.9rem;
-    margin: 12px 0;
-    font-weight: 300;
-}
-
-.phase-purpose {
-    color: #D4AF37;
-    font-size: 0.9rem;
-    margin-top: 25px;
-    padding-top: 18px;
-    border-top: 1px solid #333;
-    font-weight: 400;
-}
-
-.phase-note {
-    color: #666;
-    font-size: 0.85rem;
-    margin-top: 15px;
-    font-weight: 400;
-    padding: 8px 15px;
-    background: rgba(212, 175, 55, 0.05);
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.phases-note-box {
-    text-align: center;
-    margin-top: 40px;
-    padding: 25px;
-    background: rgba(212, 175, 55, 0.04);
-    border-left: 3px solid #D4AF37;
-    border-radius: 8px;
-}
-
-.phases-note {
-    color: #aaa;
-    font-size: 0.95rem;
-    font-style: italic;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-.phases-note-secondary {
-    color: #666;
-    font-size: 0.85rem;
-    font-style: italic;
-    font-weight: 300;
-}
-
-/* ARCHITECT SECTION */
-.architect-section {
-    margin: 80px 0;
-}
-
-.architect-box {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
-    border: 2px solid #D4AF37;
-    padding: 50px;
-    border-radius: 12px;
-}
-
-.architect-lead {
-    color: #D4AF37;
-    font-size: 1.25rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.journey-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin: 35px 0;
-}
-
-.journey-card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1.5px solid #333;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.journey-card h4 {
-    color: #D4AF37;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.journey-card p {
-    color: #999;
-    font-size: 0.9rem;
-    line-height: 1.7;
-    font-weight: 300;
-}
-
-.architect-conclusion {
-    color: #aaa;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-top: 35px;
-    text-align: center;
-    font-weight: 400;
-}
-
-.architect-signature {
-    color: #666;
-    font-size: 0.95rem;
-    font-style: italic;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: 300;
-}
-
-/* RESPONSIVE FOR NEW SECTIONS */
-@media (max-width: 1024px) {
-    .journey-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-    .intro-box, .architect-box { padding: 35px 25px; }
-    .architect-lead { font-size: 1.1rem; }
-    .intro-text { font-size: 1rem; }
-    .journey-grid { gap: 20px; }
-}
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    .preview-grid, .capabilities-grid, .roi-grid { grid-template-columns: repeat(2, 1fr); }
-    .vision-mission-grid, .phases-grid { grid-template-columns: 1fr; }
+    .preview-grid, .capabilities-grid, .security-grid, .roi-grid { grid-template-columns: repeat(2, 1fr); }
+    .vision-mission-grid, .phases-grid, .journey-grid { grid-template-columns: 1fr; }
     .roadmap-timeline { flex-direction: column; }
     .roadmap-arrow { transform: rotate(90deg); }
 }
@@ -928,16 +923,18 @@ textarea { min-height: 100px; resize: vertical; }
     #logo-bg { font-size: 12rem; }
     .executive-preview h1 { font-size: 2.2rem; }
     .registration-section { padding: 30px; }
-    .preview-grid, .capabilities-grid, .comparison-grid, .roi-grid { grid-template-columns: 1fr; }
+    .preview-grid, .capabilities-grid, .security-grid, .comparison-grid, .roi-grid { grid-template-columns: 1fr; }
     .main-header { flex-direction: column; gap: 15px; text-align: center; }
     .content-box { padding: 30px 25px; }
     .roadmap-timeline { gap: 20px; }
+    .security-section { margin: 50px 0; }
+    .security-card { padding: 30px 20px; }
 }
 
 @media (max-width: 480px) {
     .executive-preview h1 { font-size: 1.8rem; letter-spacing: 0.2rem; }
     .subtitle { font-size: 1rem; }
     .section-heading { font-size: 1.5rem; }
-    .cap-icon { font-size: 2.5rem; }
+    .cap-icon, .security-icon { font-size: 2.5rem; }
     .preview-value { font-size: 1.8rem; }
 }
